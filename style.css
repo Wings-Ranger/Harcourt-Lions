@@ -146,7 +146,7 @@ display:none; /* Hides the menu button when the sidebar is open */
     }
 
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
  .hideonmobile {
  display: none;
  }
