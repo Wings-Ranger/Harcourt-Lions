@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Membership</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="images.css" />
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li class="close-btn" onclick="hideSidebar()"><a href="#">✕</a></li>
+            <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+            <li class=""><a href="Home.html">Home</a></li>
+            <li class=""><a href="membership.html">Membership</a></li>
+            <li class=""><a href="meetings.html">Meetings</a></li>
+            <li class="" ><a href="about-us.html">About Us</a></li>
+        </ul>
+        <ul>
+            <li><img src="images/lions-logo.jpg" alt="Lions Logo" width="55" height="50"></li>
+            <li class="hideonmobile"><a href="Home.html">Home</a></li>
+            <li class="hideonmobile"><a href="membership.html">Membership</a></li>
+            <li class="hideonmobile"><a href="meetings.html">Meetings</a></li>
+            <li class="hideonmobile"><a href="about-us.html">About Us</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#">☰</a></li>
+        </ul>
+    </nav>
+  <script>
+  function showSidebar(){
+    document.body.classList.add("sidebar-open");
+  }
+  function hideSidebar(){
+    document.body.classList.remove("sidebar-open");
+  }
+  // Accessibility: close sidebar with Escape and Backspace keys
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Escape" || event.key === "Backspace") {
+        hideSidebar();
+      }
+    });
+    // Accessibility: open sidebar with Enter key
+        document.addEventListener('keydown', function(event) {
+      if (event.key === "Enter" ) {
+        showSidebar();
+      }
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>
